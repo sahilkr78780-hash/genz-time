@@ -43,12 +43,12 @@ if (!defined('BASE_URL')) {
 define('DEFAULT_ADMIN_USER', 'admin');
 define('DEFAULT_ADMIN_PASS', 'genztime2026');
 
-// Database Configuration
-define('DB_HOST', getenv('DB_HOST') ?: '127.0.0.1');
+// Database Configuration (Pre-configured for Hostinger & Localhost)
+define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
 define('DB_PORT', getenv('DB_PORT') ?: '3306');
-define('DB_NAME', getenv('DB_NAME') ?: 'genz_time');
-define('DB_USER', getenv('DB_USER') ?: 'root');
-define('DB_PASS', getenv('DB_PASS') ?: '');
+define('DB_NAME', getenv('DB_NAME') ?: 'GenZTime');
+define('DB_USER', getenv('DB_USER') ?: 'genztimeadmin');
+define('DB_PASS', getenv('DB_PASS') ?: 'GenZTime@123#');
 
 // Helper for asset URLs
 function asset($path) {

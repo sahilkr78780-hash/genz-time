@@ -17,16 +17,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $dbPass = $_POST['db_pass'] ?? '';
 
     try {
-        // Step 1: Connect to MySQL Server (without dbname first in case db needs creating)
-        $dsn = "mysql:host={$dbHost};port={$dbPort};charset=utf8mb4";
-        $pdo = new PDO($dsn, $dbUser, $dbPass, [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_TIMEOUT => 5
-        ]);
-
-        // Step 2: Create Database if not exists
-        $pdo->exec("CREATE DATABASE IF NOT EXISTS `{$dbName}` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
-        $pdo->exec("USE `{$dbName}`");
+        // Step 1: Connect to MySQL Server (attempt connecting directly to database, works best on Hostinger & cPanel)
+        try {
+            $dsn = "mysql:host={$dbHost};port={$dbPort};dbname={$dbName};charset=utf8mb4";
+            $pdo = new PDO($dsn, $dbUser, $dbPass, [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_TIMEOUT => 5
+            ]);
+        } catch (PDOException $eDb) {
+            // If db doesn't exist yet, connect to server and create it (localhost / root mode)
+            $dsn = "mysql:host={$dbHost};port={$dbPort};charset=utf8mb4";
+            $pdo = new PDO($dsn, $dbUser, $dbPass, [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_TIMEOUT => 5
+            ]);
+            $pdo->exec("CREATE DATABASE IF NOT EXISTS `{$dbName}` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
+            $pdo->exec("USE `{$dbName}`");
+        }
 
         // Step 3: Run database.sql schema
         $sqlFile = __DIR__ . '/database.sql';
