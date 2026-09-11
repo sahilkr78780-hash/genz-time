@@ -18,17 +18,20 @@ class Database {
         }
         self::$connectionAttempted = true;
 
-        // Ultra-fast 0.2s socket test to see if MySQL daemon is listening before attempting PDO
-        $errno = 0;
-        $errstr = '';
-        $socket = @fsockopen(DB_HOST, (int)DB_PORT, $errno, $errstr, 0.2);
-        if (!$socket) {
-            // MySQL server is not active on this host/port. Fast instant fallback.
-            self::$pdo = null;
-            self::$isMySQL = false;
-            return null;
+        // If on localhost default unconfigured state, check socket first to prevent Windows timeout
+        $isDefaultLocal = (DB_HOST === '127.0.0.1' || DB_HOST === 'localhost') && DB_USER === 'root' && DB_PASS === '';
+        if ($isDefaultLocal && function_exists('fsockopen')) {
+            $errno = 0;
+            $errstr = '';
+            $socket = @fsockopen(DB_HOST, (int)DB_PORT, $errno, $errstr, 0.2);
+            if (!$socket) {
+                // MySQL daemon is not running on localhost. Fast instant fallback to JSON.
+                self::$pdo = null;
+                self::$isMySQL = false;
+                return null;
+            }
+            fclose($socket);
         }
-        fclose($socket);
 
         try {
             $dsn = "mysql:host=" . DB_HOST . ";port=" . DB_PORT . ";dbname=" . DB_NAME . ";charset=utf8mb4";
@@ -36,14 +39,14 @@ class Database {
                 PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                 PDO::ATTR_EMULATE_PREPARES   => false,
-                PDO::ATTR_TIMEOUT            => 1,
+                PDO::ATTR_TIMEOUT            => 2,
             ];
 
             self::$pdo = new PDO($dsn, DB_USER, DB_PASS, $options);
             self::$isMySQL = true;
             return self::$pdo;
         } catch (PDOException $e) {
-            // MySQL port is open but database/auth not ready. Fallback to JSON.
+            // MySQL error or credentials not configured yet. Fallback to JSON.
             self::$pdo = null;
             self::$isMySQL = false;
             return null;
