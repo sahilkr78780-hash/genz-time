@@ -6,6 +6,10 @@
   RewriteEngine On
   RewriteBase /
 
+  # Redirect preview domain (*.hostingersite.com) permanently to genztime.com
+  RewriteCond %{HTTP_HOST} hostingersite\.com$ [NC]
+  RewriteRule ^(.*)$ https://genztime.com/$1 [R=301,L]
+
   # Sitemap clean rewrite
   RewriteRule ^sitemap\.xml$ sitemap.php [L]
 
