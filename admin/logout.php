@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Admin Logout Handler
+ * GenZ Time - Admin Logout Handler
  */
 
 require_once __DIR__ . '/../config/site.php';

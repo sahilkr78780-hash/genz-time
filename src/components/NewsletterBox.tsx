@@ -22,7 +22,7 @@ export default function NewsletterBox() {
       <div className="relative z-10 max-w-2xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider mb-4 bg-tech-cyan/10 border border-tech-cyan/30 text-tech-cyan">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>Sahil Tech Intelligence Dispatch</span>
+          <span>GenZ Time Intelligence Dispatch</span>
         </div>
 
         <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight mb-3">
@@ -36,7 +36,7 @@ export default function NewsletterBox() {
         {subscribed ? (
           <div className="flex items-center justify-center gap-3 p-4 rounded-2xl bg-tech-emerald/15 border border-tech-emerald/40 text-tech-emerald font-medium">
             <CheckCircle2 className="w-5 h-5 flex-shrink-0" />
-            <span>Welcome to Sahil Tech Dispatch! Verification email is on its way.</span>
+            <span>Welcome to GenZ Time Dispatch! Verification email is on its way.</span>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">

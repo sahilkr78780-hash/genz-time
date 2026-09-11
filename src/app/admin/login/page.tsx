@@ -131,7 +131,7 @@ function AdminLoginForm() {
                   required
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  placeholder="admin or sahil"
+                  placeholder="admin"
                   className="w-full pl-10 pr-4 py-3 rounded-xl bg-tech-950 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan font-mono"
                 />
               </div>
@@ -193,7 +193,7 @@ function AdminLoginForm() {
               </div>
               <div className="flex justify-between">
                 <span>Password:</span>
-                <span className="text-tech-emerald font-bold">sahiltech2026</span>
+                <span className="text-tech-emerald font-bold">genztime2026</span>
               </div>
             </div>
 

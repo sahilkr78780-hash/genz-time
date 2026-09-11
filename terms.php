@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Terms of Service
+ * GenZ Time - Terms of Service
  */
 
 require_once __DIR__ . '/config/site.php';

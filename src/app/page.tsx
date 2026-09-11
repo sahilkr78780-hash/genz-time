@@ -232,11 +232,11 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* 5. Why Trust Sahil Tech Hardware Testing */}
+      {/* 5. Why Trust GenZ Time Hardware Testing */}
       <section className="rounded-3xl bg-tech-900/60 border border-slate-800/80 p-8 sm:p-12">
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="text-xs font-mono uppercase tracking-widest text-tech-cyan font-bold block mb-2">
-            The Sahil Tech Protocol
+            The GenZ Time Protocol
           </span>
           <h2 className="text-2xl sm:text-4xl font-black text-white">
             Engineered For Pure Hardware Integrity

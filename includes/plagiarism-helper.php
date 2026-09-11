@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Plagiarism & Authenticity Engine
+ * GenZ Time - Plagiarism & Authenticity Engine
  * Detects syndicated PR boilerplate, synthetic AI clichés, and provides 1-click humanizing rewriting.
  */
 

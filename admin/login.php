@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Admin CMS Login Portal
+ * GenZ Time - Admin CMS Login Portal
  */
 
 require_once __DIR__ . '/../config/site.php';
@@ -19,9 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'] ?? '';
 
     if (db_verify_admin($username, $password)) {
-        $_SESSION['sahil_admin_logged_in'] = true;
+        $_SESSION['genz_admin_logged_in'] = true;
         $_SESSION['admin_user'] = $username;
-        $_SESSION['admin_name'] = 'Sahil Verma';
+        $_SESSION['admin_name'] = 'GenZ Editorial Team';
         header('Location: ' . url('admin/index.php'));
         exit;
     } else {
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div style="background: rgba(6, 182, 212, 0.08); border: 1px dashed rgba(6, 182, 212, 0.3); border-radius: 8px; padding: 14px; margin-top: 24px; font-size: 0.78rem; color: var(--text-dim);">
       <strong style="color: var(--accent-cyan-light);"><i class="fa-solid fa-key"></i> Default Access:</strong><br>
       Username: <code style="color: #fff;">admin</code><br>
-      Password: <code style="color: #fff;">genztime2026</code> (or <code>sahiltech2026</code>)
+      Password: <code style="color: #fff;">genztime2026</code> (or <code>genztime2026</code>)
     </div>
 
     <div style="text-align: center; margin-top: 24px;">

@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Publish New Hardware Review Studio
+ * GenZ Time - Publish New Hardware Review Studio
  */
 
 require_once __DIR__ . '/../config/site.php';
@@ -268,7 +268,7 @@ require_once __DIR__ . '/header.php';
           </div>
         </div>
 
-        <!-- Sahil Tech Verdict Box Fields -->
+        <!-- GenZ Time Verdict Box Fields -->
         <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 28px; margin-bottom: 24px;">
           <h3 style="font-size: 1.15rem; color: #fff; margin-bottom: 16px;">Final Numerical Verdict</h3>
           <div style="display: grid; grid-template-columns: 180px 1fr; gap: 20px;">

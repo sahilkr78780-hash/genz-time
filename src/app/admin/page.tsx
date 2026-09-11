@@ -50,13 +50,13 @@ export default function AdminDashboardPage() {
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider bg-tech-cyan/15 text-tech-cyan border border-tech-cyan/30">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>Sahil Tech Administration Command</span>
+              <span>GenZ Time Administration Command</span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-black text-white">
               Hardware Editor & CMS Dashboard
             </h1>
             <p className="text-xs sm:text-sm text-slate-400 font-mono">
-              Authenticated Session • Super Admin (Sahil Verma)
+              Authenticated Session • Super Admin (GenZ Editorial Team)
             </p>
           </div>
 

@@ -37,7 +37,7 @@ export default function ContactPage() {
           <span>Connect with the Lab</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight mb-3">
-          Get in Touch with Sahil Tech
+          Get in Touch with GenZ Time
         </h1>
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
           Whether you represent a consumer hardware brand looking to submit review units for benchmarking, have a breaking tech news tip, or want to partner with us, we are eager to hear from you.
@@ -56,7 +56,7 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-2xl font-bold text-white">Inquiry Received!</h3>
                 <p className="text-sm text-slate-300 max-w-md mx-auto">
-                  Thank you for contacting Sahil Tech. Our editorial or hardware testing team will review your message and reply within 24–48 business hours.
+                  Thank you for contacting GenZ Time. Our editorial or hardware testing team will review your message and reply within 24–48 business hours.
                 </p>
                 <button
                   onClick={() => {
@@ -147,7 +147,7 @@ export default function ContactPage() {
                   className="w-full py-3.5 px-6 rounded-xl font-bold text-sm text-tech-950 bg-gradient-to-r from-tech-cyan to-tech-emerald shadow-glow hover:opacity-90 transition flex items-center justify-center gap-2"
                 >
                   <Send className="w-4 h-4" />
-                  <span>Transmit Inquiry to Sahil Tech</span>
+                  <span>Transmit Inquiry to GenZ Time</span>
                 </button>
               </form>
             )}
@@ -168,8 +168,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <span className="text-slate-400 block">Editorial Desk:</span>
-                  <a href="mailto:editor@sahiltech.com" className="text-white hover:text-tech-cyan transition font-bold text-sm">
-                    editor@sahiltech.com
+                  <a href="mailto:editor@genztime.com" className="text-white hover:text-tech-cyan transition font-bold text-sm">
+                    editor@genztime.com
                   </a>
                 </div>
               </div>
@@ -180,8 +180,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <span className="text-slate-400 block">Review Unit Submissions:</span>
-                  <a href="mailto:hardware-lab@sahiltech.com" className="text-white hover:text-tech-emerald transition font-bold text-sm">
-                    hardware-lab@sahiltech.com
+                  <a href="mailto:hardware-lab@genztime.com" className="text-white hover:text-tech-emerald transition font-bold text-sm">
+                    hardware-lab@genztime.com
                   </a>
                 </div>
               </div>

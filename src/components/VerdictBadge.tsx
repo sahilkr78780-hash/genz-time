@@ -27,7 +27,7 @@ export default function VerdictBadge({ score, summary, gadgetName }: Props) {
         <div className="flex-1">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider mb-3 bg-white/5 border border-white/10 text-white">
             <Award className="w-3.5 h-3.5 text-tech-cyan" />
-            <span>Sahil Tech Lab Verdict</span>
+            <span>GenZ Time Lab Verdict</span>
           </div>
 
           <h3 className="text-xl md:text-2xl font-black text-white mb-2">
@@ -42,7 +42,7 @@ export default function VerdictBadge({ score, summary, gadgetName }: Props) {
 
           {gadgetName && (
             <p className="text-xs text-slate-400 mt-3 font-mono">
-              Tested independently by Sahil Tech Editorial Lab
+              Tested independently by GenZ Time Editorial Lab
             </p>
           )}
         </div>

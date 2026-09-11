@@ -35,14 +35,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = await getPostBySlug(params.slug);
   if (!post) {
     return {
-      title: 'Article Not Found | Sahil Tech',
+      title: 'Article Not Found | GenZ Time',
     };
   }
 
   const postUrl = `${SITE_CONFIG.url}/blog/${post.slug}`;
 
   return {
-    title: post.seo?.metaTitle || `${post.title} | Sahil Tech`,
+    title: post.seo?.metaTitle || `${post.title} | GenZ Time`,
     description: post.seo?.metaDescription || post.excerpt,
     keywords: post.tags,
     alternates: {
@@ -269,7 +269,7 @@ export default async function SinglePostPage({ params }: PageProps) {
       {/* 8. Google E-E-A-T Quality & Hardware Lab Audit Badge */}
       <EeatBadge audit={eeatAudit} deviceTitle={post.title} />
 
-      {/* 9. Official Sahil Tech Verdict Badge */}
+      {/* 9. Official GenZ Time Verdict Badge */}
       <VerdictBadge
         score={post.verdictScore}
         summary={post.verdictSummary}

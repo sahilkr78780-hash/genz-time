@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Data Access Layer (MySQL + Resilient Store)
+ * GenZ Time - Data Access Layer (MySQL + Resilient Store)
  * Translates between database records and unified presentation models.
  */
 
@@ -523,7 +523,7 @@ function db_verify_admin(string $username, string $password): bool {
     }
 
     // Fallback credential check
-    if ($username === DEFAULT_ADMIN_USER && ($password === DEFAULT_ADMIN_PASS || $password === 'genztime2026' || $password === 'sahiltech2026')) {
+    if ($username === DEFAULT_ADMIN_USER && ($password === DEFAULT_ADMIN_PASS || $password === 'genztime2026' || $password === 'genztime2026')) {
         return true;
     }
     return false;

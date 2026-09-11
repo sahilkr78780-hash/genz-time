@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - 1-Click MySQL Database Installer
+ * GenZ Time - 1-Click MySQL Database Installer
  * Designed for Shared Hosting (cPanel / Hostinger) and Localhost setup.
  */
 
@@ -12,7 +12,7 @@ $status = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $dbHost = trim($_POST['db_host'] ?? '127.0.0.1');
     $dbPort = trim($_POST['db_port'] ?? '3306');
-    $dbName = trim($_POST['db_name'] ?? 'sahil_tech');
+    $dbName = trim($_POST['db_name'] ?? 'genz_time');
     $dbUser = trim($_POST['db_user'] ?? 'root');
     $dbPass = $_POST['db_pass'] ?? '';
 

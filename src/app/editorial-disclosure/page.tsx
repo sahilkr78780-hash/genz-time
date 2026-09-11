@@ -4,7 +4,7 @@ import { ShieldCheck, CheckCircle2, AlertTriangle, FileText, Lock } from 'lucide
 import { SITE_CONFIG } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Editorial Standards & Testing Disclosure | Sahil Tech',
+  title: 'Editorial Standards & Testing Disclosure | GenZ Time',
   description: 'Our rigorous guidelines for review units, testing ethics, affiliate links, and editorial independence.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/editorial-disclosure`,
@@ -24,7 +24,7 @@ export default function EditorialDisclosurePage() {
           Editorial Disclosure & Review Ethics
         </h1>
         <p className="text-base text-slate-300 leading-relaxed">
-          At Sahil Tech, our readers&apos; trust is our highest priority. We believe in absolute transparency regarding how we test hardware, source review samples, and fund our operations.
+          At GenZ Time, our readers&apos; trust is our highest priority. We believe in absolute transparency regarding how we test hardware, source review samples, and fund our operations.
         </p>
       </div>
 
@@ -53,7 +53,7 @@ export default function EditorialDisclosurePage() {
           <ul className="list-disc pl-6 space-y-1.5 text-slate-400">
             <li>Loaned units are returned to the manufacturer upon completion of testing.</li>
             <li>We do not accept gifts, financial compensation, or pre-approved review drafts in exchange for coverage.</li>
-            <li>When review units are unavailable prior to launch, Sahil Tech purchases retail retail units with our own editorial funds.</li>
+            <li>When review units are unavailable prior to launch, GenZ Time purchases retail units with our own editorial funds.</li>
           </ul>
         </section>
 
@@ -64,7 +64,7 @@ export default function EditorialDisclosurePage() {
             <span>3. Affiliate Links & Financial Transparency</span>
           </h2>
           <p>
-            Some articles may contain affiliate links (e.g. Amazon, Best Buy, or official brand storefronts). If you make a purchase through these links, Sahil Tech may earn a modest commission at zero additional cost to you.
+            Some articles may contain affiliate links (e.g. Amazon, Best Buy, or official brand storefronts). If you make a purchase through these links, GenZ Time may earn a modest commission at zero additional cost to you.
           </p>
           <p className="text-xs text-slate-400 font-mono bg-tech-900/60 p-4 rounded-xl border border-slate-800">
             Crucially: Our testing staff has zero knowledge of which products have active affiliate agreements. A product with no affiliate program will be recommended over a higher-commission product if it performs better in our benchmark testing.

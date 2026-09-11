@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - About Laboratory & E-E-A-T Credentials
+ * GenZ Time - About Laboratory & E-E-A-T Credentials
  */
 
 require_once __DIR__ . '/config/site.php';
@@ -67,7 +67,7 @@ require_once __DIR__ . '/includes/header.php';
       </div>
       <h2 style="font-size: 2.2rem; color: #fff; margin-bottom: 12px;"><?= SITE_AUTHOR ?></h2>
       <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 16px;">
-        <?= SITE_AUTHOR_BIO ?> Sahil has tested over 1,400 consumer devices, audited silicon micro-architectures from Qualcomm, Apple, AMD, and Intel, and authored benchmark evaluation criteria referenced across leading consumer hardware publications.
+        <?= SITE_AUTHOR_BIO ?> Our team has tested over 1,400 consumer devices, audited silicon micro-architectures from Qualcomm, Apple, AMD, and Intel, and authored benchmark evaluation criteria referenced across leading consumer hardware publications.
       </p>
       <div style="display: flex; gap: 16px;">
         <a href="<?= SITE_TWITTER ?>" target="_blank" class="btn btn-secondary btn-sm"><i class="fa-brands fa-x-twitter"></i> Follow On X</a>

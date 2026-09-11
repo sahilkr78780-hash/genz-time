@@ -64,7 +64,7 @@ export default function PublishStudioPage() {
   const [excerpt, setExcerpt] = useState('');
   const [featuredImage, setFeaturedImage] = useState(PRESET_IMAGES[0].url);
   const [tagsInput, setTagsInput] = useState('Flagship, AI Gadgets, Benchmarks');
-  const [authorName, setAuthorName] = useState('Sahil Verma');
+  const [authorName, setAuthorName] = useState('GenZ Editorial Team');
   const [authorRole, setAuthorRole] = useState('Editor-in-Chief & Lead Hardware Analyst');
 
   // Specs state
@@ -113,7 +113,7 @@ export default function PublishStudioPage() {
       setSlug(generated);
     }
     if (!metaTitle || metaTitle.startsWith(title)) {
-      setMetaTitle(val ? `${val} | Sahil Tech Review` : '');
+      setMetaTitle(val ? `${val} | GenZ Time Review` : '');
     }
   };
 
@@ -330,7 +330,7 @@ export default function PublishStudioPage() {
       categorySlug,
       tags,
       author: {
-        name: authorName || 'Sahil Verma',
+        name: authorName || 'GenZ Editorial Team',
         role: authorRole || 'Editor-in-Chief & Lead Hardware Analyst',
         avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
         bio: 'Gadget architect and tech journalist testing cutting-edge consumer hardware and spatial devices for over 8 years.',
@@ -341,10 +341,10 @@ export default function PublishStudioPage() {
       cons,
       specs,
       seo: {
-        metaTitle: metaTitle || `${title} | Sahil Tech`,
+        metaTitle: metaTitle || `${title} | GenZ Time`,
         metaDescription: metaDescription || excerpt,
         focusKeyword,
-        canonicalUrl: `https://sahiltech.com/blog/${slug}`,
+        canonicalUrl: `https://genztime.com/blog/${slug}`,
         ogImage: featuredImage,
       },
       eeatScore: eeatAudit.overallScore,
@@ -363,7 +363,7 @@ export default function PublishStudioPage() {
 
       const data = await res.json();
       if (data.success) {
-        setSuccessMessage(editingId ? 'Article updated successfully!' : 'Article published live to Sahil Tech!');
+        setSuccessMessage(editingId ? 'Article updated successfully!' : 'Article published live to GenZ Time!');
         fetchPosts();
         setTimeout(() => {
           router.push(`/blog/${data.post.slug}`);
@@ -388,7 +388,7 @@ export default function PublishStudioPage() {
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider mb-2 bg-tech-cyan/15 text-tech-cyan border border-tech-cyan/30">
             <Cpu className="w-3.5 h-3.5" />
-            <span>Sahil Tech CMS Studio</span>
+            <span>GenZ Time CMS Studio</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-black text-white">
             Publish & Manage Hardware Reviews
@@ -865,7 +865,7 @@ export default function PublishStudioPage() {
             <div className="p-6 rounded-3xl bg-tech-900/70 border border-slate-800 space-y-4">
               <h2 className="text-lg font-bold text-white flex items-center gap-2">
                 <Star className="w-4 h-4 text-tech-cyan" />
-                <span>Sahil Tech Score & Verdict Summary</span>
+                <span>GenZ Time Score & Verdict Summary</span>
               </h2>
 
               <div className="flex flex-col sm:flex-row items-center gap-6">
@@ -1188,19 +1188,19 @@ export default function PublishStudioPage() {
                 <div className="p-3 rounded-xl bg-white text-slate-900 text-left font-sans shadow-md border border-slate-300">
                   <div className="flex items-center gap-1.5 text-[11px] text-[#202124] mb-0.5 truncate">
                     <span className="w-3.5 h-3.5 rounded-full bg-tech-950 flex items-center justify-center text-[7px] text-tech-cyan font-mono font-bold">
-                      S
+                      G
                     </span>
-                    <span className="truncate">sahiltech.com &gt; blog &gt; {slug || 'your-slug'}</span>
+                    <span className="truncate">genztime.com &gt; blog &gt; {slug || 'your-slug'}</span>
                   </div>
                   <h5 className="text-[#1a0dab] hover:underline text-sm font-medium leading-snug line-clamp-1 cursor-pointer">
-                    {metaTitle || title || 'Sahil Tech Gadget Review Headline'}
+                    {metaTitle || title || 'GenZ Time Gadget Review Headline'}
                   </h5>
                   <div className="flex items-center gap-1 text-[11px] text-[#4d5156] my-0.5">
                     <span className="text-[#e37400]">★★★★★</span>
                     <span>Rating: {verdictScore.toFixed(1)}/10</span>
                   </div>
                   <p className="text-[12px] text-[#4d5156] line-clamp-2 leading-relaxed">
-                    {metaDescription || excerpt || 'Detailed hardware analysis, benchmarks, camera shootout, and lab verdict on Sahil Tech.'}
+                    {metaDescription || excerpt || 'Detailed hardware analysis, benchmarks, camera shootout, and lab verdict on GenZ Time.'}
                   </p>
                 </div>
               </div>

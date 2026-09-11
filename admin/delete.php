@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Delete Review Handler
+ * GenZ Time - Delete Review Handler
  */
 
 require_once __DIR__ . '/../config/site.php';

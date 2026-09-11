@@ -219,7 +219,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:bg-white/5"
             >
-              About Sahil Tech
+              About GenZ Time
             </Link>
             <Link
               href="/editorial-disclosure"

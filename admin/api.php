@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Admin AJAX API Endpoint
+ * GenZ Time - Admin AJAX API Endpoint
  * Handles live Auto-SEO generation, Plagiarism scanning, and 1-click Humanizing.
  */
 

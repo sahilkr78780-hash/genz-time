@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Privacy Policy
+ * GenZ Time - Privacy Policy
  */
 
 require_once __DIR__ . '/config/site.php';

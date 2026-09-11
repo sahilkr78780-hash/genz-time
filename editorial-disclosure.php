@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Editorial Standards & Disclosure
+ * GenZ Time - Editorial Standards & Disclosure
  */
 
 require_once __DIR__ . '/config/site.php';

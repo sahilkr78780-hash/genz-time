@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Modern Tech Gadget Blog & Review Portal (Homepage)
+ * GenZ Time - Modern Tech Gadget Blog & Review Portal (Homepage)
  */
 
 require_once __DIR__ . '/config/site.php';

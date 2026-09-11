@@ -65,12 +65,12 @@ export function generateHighLevelSeo(params: {
   }
 
   tagsSet.add('Hardware Tests');
-  tagsSet.add('Sahil Tech Lab');
+  tagsSet.add('GenZ Time Lab');
 
   const tags = Array.from(tagsSet).slice(0, 7);
 
   // 4. Generate High-CTR Meta Title (Optimal: 48-60 characters)
-  // Pattern: [Device Name] Review: [Key Technical Advantage] | Sahil Tech
+  // Pattern: [Device Name] Review: [Key Technical Advantage] | GenZ Time
   let keyBenefit = 'Lab Benchmarks & Specs';
   if (specs.processor && specs.processor.length < 25) {
     keyBenefit = `${specs.processor} Tested`;
@@ -82,12 +82,12 @@ export function generateHighLevelSeo(params: {
     keyBenefit = 'Performance & Thermals';
   }
 
-  let metaTitle = `${deviceName} Review: ${keyBenefit} | Sahil Tech`;
+  let metaTitle = `${deviceName} Review: ${keyBenefit} | GenZ Time`;
   if (metaTitle.length > 65) {
-    metaTitle = `${deviceName} Review & Benchmarks | Sahil Tech`;
+    metaTitle = `${deviceName} Review & Benchmarks | GenZ Time`;
   }
   if (metaTitle.length > 65) {
-    metaTitle = `${deviceName} Full Review | Sahil Tech`;
+    metaTitle = `${deviceName} Full Review | GenZ Time`;
   }
 
   // 5. Generate High-CTR Meta Description (Optimal: 140-158 characters)
@@ -101,14 +101,14 @@ export function generateHighLevelSeo(params: {
     specSnippet = 'thermals, battery benchmarks, and camera accuracy,';
   }
 
-  let metaDescription = `In-depth ${deviceName} review: ${specSnippet} and full Sahil Tech Lab score verdict. Discover pros, cons, and performance.`.trim();
+  let metaDescription = `In-depth ${deviceName} review: ${specSnippet} and full GenZ Time Lab score verdict. Discover pros, cons, and performance.`.trim();
 
   // Fine-tune character length to be strictly between 135 and 160 characters
   if (metaDescription.length > 160) {
-    metaDescription = `Comprehensive ${deviceName} review: lab benchmarks, real-world battery tests, full specs sheet, and our independent Sahil Tech verdict score.`;
+    metaDescription = `Comprehensive ${deviceName} review: lab benchmarks, real-world battery tests, full specs sheet, and our independent GenZ Time verdict score.`;
   }
   if (metaDescription.length < 125) {
-    metaDescription = `Hands-on ${deviceName} review tested in the Sahil Tech Lab: synthetic compute benchmarks, battery endurance rundown, pros, cons, and final verdict.`;
+    metaDescription = `Hands-on ${deviceName} review tested in the GenZ Time Lab: synthetic compute benchmarks, battery endurance rundown, pros, cons, and final verdict.`;
   }
 
   // 6. Generate Clean Semantic Slug

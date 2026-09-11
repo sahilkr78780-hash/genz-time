@@ -18,18 +18,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getCategoryBySlug(params.slug);
   if (!category) {
     return {
-      title: 'Category Not Found | Sahil Tech',
+      title: 'Category Not Found | GenZ Time',
     };
   }
 
   return {
-    title: `${category.name} Reviews, Hardware Benchmarks & Guides | Sahil Tech`,
-    description: `Read the latest ${category.name} in-depth reviews, laboratory benchmarks, and buyer guides on Sahil Tech.`,
+    title: `${category.name} Reviews, Hardware Benchmarks & Guides | GenZ Time`,
+    description: `Read the latest ${category.name} in-depth reviews, laboratory benchmarks, and buyer guides on GenZ Time.`,
     alternates: {
       canonical: `${SITE_CONFIG.url}/category/${category.slug}`,
     },
     openGraph: {
-      title: `${category.name} Gadgets & Reviews | Sahil Tech`,
+      title: `${category.name} Gadgets & Reviews | GenZ Time`,
       description: category.description,
       url: `${SITE_CONFIG.url}/category/${category.slug}`,
     },

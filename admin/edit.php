@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Edit Hardware Review
+ * GenZ Time - Edit Hardware Review
  */
 
 require_once __DIR__ . '/../config/site.php';

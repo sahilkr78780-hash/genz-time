@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Single In-Depth Hardware Review
+ * GenZ Time - Single In-Depth Hardware Review
  */
 
 require_once __DIR__ . '/config/site.php';
@@ -212,7 +212,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
       </div>
 
-      <!-- Sahil Tech Verdict Box -->
+      <!-- GenZ Time Verdict Box -->
       <div class="verdict-box">
         <div class="verdict-score-circle">
           <div class="verdict-score-num"><?= number_format($post['verdictScore'], 1) ?></div>

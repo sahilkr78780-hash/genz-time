@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Contact & Review Pitches
+ * GenZ Time - Contact & Review Pitches
  */
 
 require_once __DIR__ . '/config/site.php';

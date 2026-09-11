@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Category Hub Page
+ * GenZ Time - Category Hub Page
  */
 
 require_once __DIR__ . '/config/site.php';
@@ -19,7 +19,7 @@ if (!$category) {
 }
 
 $pageTitle = $category['name'] . ' Reviews & Hardware Benchmarks | ' . SITE_NAME;
-$pageDescription = 'Read comprehensive ' . strtolower($category['name']) . ' hardware reviews, benchmark teardowns, battery tests, and expert verdict from Sahil Tech.';
+$pageDescription = 'Read comprehensive ' . strtolower($category['name']) . ' hardware reviews, benchmark teardowns, battery tests, and expert verdict from GenZ Time.';
 $activeNav = $category['slug'];
 
 $posts = db_get_all_posts(null, $category['slug']);

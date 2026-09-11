@@ -78,7 +78,7 @@ export async function savePost(postData: Partial<BlogPost> & { title: string; co
     categorySlug: postData.categorySlug || 'smartphones',
     tags: postData.tags && postData.tags.length > 0 ? postData.tags : ['Tech', 'Gadgets'],
     author: postData.author || {
-      name: 'Sahil Verma',
+      name: 'GenZ Editorial Team',
       role: 'Founder & Tech Editor',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
       bio: 'Gadget architect and tech journalist testing cutting-edge consumer hardware and spatial devices for over 8 years.',
@@ -92,10 +92,10 @@ export async function savePost(postData: Partial<BlogPost> & { title: string; co
     cons: postData.cons && postData.cons.length > 0 ? postData.cons : ['Premium pricing'],
     specs: postData.specs || {},
     seo: {
-      metaTitle: postData.seo?.metaTitle || `${postData.title} | Sahil Tech`,
+      metaTitle: postData.seo?.metaTitle || `${postData.title} | GenZ Time`,
       metaDescription: postData.seo?.metaDescription || postData.excerpt || postData.content.slice(0, 155),
       focusKeyword: postData.seo?.focusKeyword || postData.tags?.[0] || 'tech gadgets',
-      canonicalUrl: postData.seo?.canonicalUrl || `https://sahiltech.com/blog/${slug}`,
+      canonicalUrl: postData.seo?.canonicalUrl || `https://genztime.com/blog/${slug}`,
       ogImage: postData.seo?.ogImage || postData.featuredImage,
     },
     isFeatured: postData.isFeatured ?? false,

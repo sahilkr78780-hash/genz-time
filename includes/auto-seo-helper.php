@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - 1-Click Auto-SEO & Genuine Keyword Generator
+ * GenZ Time - 1-Click Auto-SEO & Genuine Keyword Generator
  * Generates high-intent search terms, LSI tags, optimized meta title, and high-CTR meta description.
  */
 
@@ -70,7 +70,7 @@ function generate_auto_seo(string $title, string $category, string $content, arr
     $tags = array_values(array_unique($tags));
 
     // 3. Generate High-CTR Meta Title (50-60 characters)
-    // Formula: [Subject] Review: [Key Hardware Hook] | Sahil Tech
+    // Formula: [Subject] Review: [Key Hardware Hook] | GenZ Time
     $hooks = [
         'Lab Benchmarks & Real-World Verdict',
         'Thermal & Battery Test Results',

@@ -4,8 +4,8 @@ import { FileText, CheckCircle } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Sahil Tech',
-  description: 'Terms and conditions for browsing Sahil Tech and quoting our benchmark data.',
+  title: 'Terms of Service | GenZ Time',
+  description: 'Terms and conditions for browsing GenZ Time and quoting our benchmark data.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/terms`,
   },
@@ -31,7 +31,7 @@ export default function TermsPage() {
         <section className="space-y-2">
           <h2 className="text-lg font-bold text-white">1. Content & Benchmark Copyright</h2>
           <p>
-            All written reviews, photographs, thermal diagrams, and benchmark charts created by Sahil Tech are the intellectual property of Sahil Tech. External publications and tech creators may quote short excerpts or benchmark graphs provided proper canonical attribution and a direct hyperlink to the original article is included.
+            All written reviews, photographs, thermal diagrams, and benchmark charts created by GenZ Time are the intellectual property of GenZ Time. External publications and tech creators may quote short excerpts or benchmark graphs provided proper canonical attribution and a direct hyperlink to the original article is included.
           </p>
         </section>
 
@@ -45,7 +45,7 @@ export default function TermsPage() {
         <section className="space-y-2">
           <h2 className="text-lg font-bold text-white">3. User Submissions & Community Conduct</h2>
           <p>
-            Comments, tech questions, and feedback submitted on Sahil Tech must remain civil, respectful, and free of malicious links or automated spam.
+            Comments, tech questions, and feedback submitted on GenZ Time must remain civil, respectful, and free of malicious links or automated spam.
           </p>
         </section>
       </div>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Google E-E-A-T Quality Engine
+ * GenZ Time - Google E-E-A-T Quality Engine
  * Evaluates Experience, Expertise, Authoritativeness, and Trustworthiness.
  */
 

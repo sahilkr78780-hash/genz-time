@@ -6,10 +6,10 @@ import { Cpu, Shield } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Hardware Reviews, Benchmarks & Tech Gadgets Archive',
-  description: 'Browse the complete index of Sahil Tech hands-on reviews, teardowns, and benchmark reports across smartphones, spatial computing, laptops, and smart audio.',
+  description: 'Browse the complete index of GenZ Time hands-on reviews, teardowns, and benchmark reports across smartphones, spatial computing, laptops, and smart audio.',
   openGraph: {
-    title: 'Hardware Reviews, Benchmarks & Tech Gadgets Archive | Sahil Tech',
-    description: 'Browse the complete index of Sahil Tech hands-on reviews, teardowns, and benchmark reports across smartphones, spatial computing, laptops, and smart audio.',
+    title: 'Hardware Reviews, Benchmarks & Tech Gadgets Archive | GenZ Time',
+    description: 'Browse the complete index of GenZ Time hands-on reviews, teardowns, and benchmark reports across smartphones, spatial computing, laptops, and smart audio.',
   },
 };
 
@@ -28,7 +28,7 @@ export default async function BlogPage() {
           Tech Gadget Reviews & Field Tests
         </h1>
         <p className="text-base text-slate-300 leading-relaxed">
-          Comprehensive, unbiased analysis of today&apos;s most influential consumer hardware. Filter by product sector, search specifications, or sort by our official Sahil Tech Lab Score.
+          Comprehensive, unbiased analysis of today&apos;s most influential consumer hardware. Filter by product sector, search specifications, or sort by our official GenZ Time Lab Score.
         </p>
       </div>
 

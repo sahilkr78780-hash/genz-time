@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Dynamic XML Sitemap
+ * GenZ Time - Dynamic XML Sitemap
  * Automatically generates Google-compliant sitemap XML for all posts, categories, and pages.
  */
 

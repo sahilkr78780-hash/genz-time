@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Resilient Database Connection
+ * GenZ Time - Resilient Database Connection
  * Supports MySQL via PDO with graceful fallback to JSON store if MySQL is not yet configured.
  */
 

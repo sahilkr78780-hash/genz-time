@@ -4,8 +4,8 @@ import { Shield, Lock } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Sahil Tech',
-  description: 'Sahil Tech Privacy Policy explaining data protection, analytics, and cookie transparency.',
+  title: 'Privacy Policy | GenZ Time',
+  description: 'GenZ Time Privacy Policy explaining data protection, analytics, and cookie transparency.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/privacy`,
   },
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
         <section className="space-y-2">
           <h2 className="text-lg font-bold text-white">1. Information We Collect</h2>
           <p>
-            When you browse Sahil Tech, subscribe to our newsletter dispatch, or contact our testing laboratory, we may collect minimal technical identifiers such as your browser type, device operating system, and IP address for security and caching optimization.
+            When you browse GenZ Time, subscribe to our newsletter dispatch, or contact our testing laboratory, we may collect minimal technical identifiers such as your browser type, device operating system, and IP address for security and caching optimization.
           </p>
         </section>
 
@@ -45,7 +45,7 @@ export default function PrivacyPage() {
         <section className="space-y-2">
           <h2 className="text-lg font-bold text-white">3. Newsletter Dispatches</h2>
           <p>
-            If you subscribe to the Sahil Tech Newsletter, your email address is used solely to deliver tech gadget analyses and hardware reviews. Every email includes a one-click unsubscribe link.
+            If you subscribe to the GenZ Time Newsletter, your email address is used solely to deliver tech gadget analyses and hardware reviews. Every email includes a one-click unsubscribe link.
           </p>
         </section>
 

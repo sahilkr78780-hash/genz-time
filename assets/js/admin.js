@@ -1,5 +1,5 @@
 /**
- * Sahil Tech - Admin CMS Studio Scripts
+ * GenZ Time - Admin CMS Studio Scripts
  * Real-time SEO Audit, Plagiarism Scanner, Humanizer & Auto-SEO
  */
 

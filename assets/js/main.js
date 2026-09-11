@@ -1,5 +1,5 @@
 /**
- * Sahil Tech - Main Interactive UI Scripts
+ * GenZ Time - Main Interactive UI Scripts
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         list.prepend(item);
         commentForm.reset();
-        alert('Thank you for contributing to the Sahil Tech hardware discussion!');
+        alert('Thank you for contributing to the GenZ Time hardware discussion!');
       }
     });
   }

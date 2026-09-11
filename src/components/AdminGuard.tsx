@@ -93,7 +93,7 @@ export default function AdminGuard({ children }: Props) {
           </div>
 
           <p className="text-xs text-slate-400 font-mono">
-            This area is restricted to Sahil Tech editorial staff for publishing and hardware management.
+            This area is restricted to GenZ Time editorial staff for publishing and hardware management.
           </p>
 
           {error && (
@@ -172,7 +172,7 @@ export default function AdminGuard({ children }: Props) {
               </div>
               <div className="flex justify-between">
                 <span>Pass:</span>
-                <span className="text-tech-emerald">sahiltech2026</span>
+                <span className="text-tech-emerald">genztime2026</span>
               </div>
             </div>
           </div>

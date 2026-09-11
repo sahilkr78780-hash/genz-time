@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - SEO Engine & Real-time Auditor
+ * GenZ Time - SEO Engine & Real-time Auditor
  * Implements Google ranking factors, structured JSON-LD schemas, and on-page score auditing.
  */
 

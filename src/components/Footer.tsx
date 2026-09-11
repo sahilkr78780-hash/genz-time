@@ -26,7 +26,7 @@ export default function Footer() {
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="text-sm font-semibold text-white">Sahil Tech Independent Lab Standards</h4>
+                <h4 className="text-sm font-semibold text-white">GenZ Time Independent Lab Standards</h4>
                 <p className="text-xs text-slate-400">
                   100% autonomous hardware benchmarking. We never accept compensation for review verdicts or ratings.
                 </p>
@@ -49,7 +49,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <Logo size="md" showTagline={true} />
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm pt-2">
-              Sahil Tech is a premier digital publication exploring the frontier of consumer technology, silicon engineering, spatial hardware, and smart devices. Tested by tech enthusiasts, for enthusiasts.
+              GenZ Time is a premier digital publication exploring the frontier of consumer technology, silicon engineering, spatial hardware, and smart devices. Tested by tech enthusiasts, for enthusiasts.
             </p>
             <div className="pt-2 flex items-center space-x-3 text-slate-400">
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-white/5 hover:bg-tech-cyan/10 hover:text-tech-cyan transition">
@@ -99,7 +99,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm">
               <li>
                 <Link href="/about" className="hover:text-white transition">
-                  About Sahil Tech
+                  About GenZ Time
                 </Link>
               </li>
               <li>
@@ -163,7 +163,7 @@ export default function Footer() {
 
         {/* Bottom Credits & Copyright */}
         <div className="pt-10 mt-10 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} Sahil Tech. All rights reserved. Specialized in consumer hardware & tech gadgets.</p>
+          <p>© {new Date().getFullYear()} GenZ Time. All rights reserved. Specialized in consumer hardware & tech gadgets.</p>
           <p className="font-mono text-slate-400">
             Engineered with Next.js SSR • Ultra-Fast SEO Architecture
           </p>

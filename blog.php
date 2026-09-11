@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Hardware Reviews & Articles Archive
+ * GenZ Time - Hardware Reviews & Articles Archive
  */
 
 require_once __DIR__ . '/config/site.php';

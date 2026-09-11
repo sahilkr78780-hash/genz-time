@@ -1,6 +1,6 @@
 <?php
 /**
- * Sahil Tech - Admin CMS Header Component
+ * GenZ Time - Admin CMS Header Component
  */
 
 require_once __DIR__ . '/../config/site.php';
